@@ -157,7 +157,7 @@ class Game:
         try:
             gamecount = int(input("Enter the amount of rounds to play:: "))
         except ValueError:
-            Game(p1, p2).play_game()
+            Game(p1, p2).play_game(p1, p2)
         for round in range(gamecount):
             print(f"Round {round}:")
             self.play_round()
@@ -165,5 +165,5 @@ class Game:
 
 
 if __name__ == '__main__':
-    game = Game(Player(), Player())
-    game.play_game(p1, p2)
+    game = Game(HumanPlayer(), RandomPlayer())
+    game.play_game()
