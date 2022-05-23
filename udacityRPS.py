@@ -166,4 +166,4 @@ class Game:
 
 if __name__ == '__main__':
     game = Game(Player(), Player())
-    game.play_game()
+    game.play_game(p1, p2)
